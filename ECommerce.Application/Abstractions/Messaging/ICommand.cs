@@ -1,0 +1,5 @@
+using MediatR;
+
+namespace ECommerce.Application.Abstractions.Messaging;
+
+public interface ICommand<out TResponse> : IRequest<TResponse>;
